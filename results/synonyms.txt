@@ -1,0 +1,39 @@
+antonym	antonym
+atlocation	location	locality	place	position	spot	locale	site
+attribute	attribute	property	quality	trait	feature	characteristic
+capableof	capable	able	competent	ability	competent
+causes	cause	consequence	result	outcome	effect	induce
+causesdesire	desire	cause	crave	wish
+createdby	creator	builder	conception	designer	author
+definedas	definition	characterization	meaning
+derivedfrom	derivative	derivation	ancestor
+desires	desire	desires	ambition	aspire	crave	want	wish
+entails	entails	involve
+field	field	domain	knowledge	interest	study	occupation	vocation
+hascontext	context	framework	circumstance	setting
+hasfirstsubevent	follow	event	first
+haslastsubevent	follow	event	last
+hasprerequisite	requirement	demand	prerequisite	requisite	precondition	condition	necessity
+hasproperty	property	attribute	quality	trait	feature	characteristic
+hassubevent	consequence	outcome	follow
+influencedby	influence	bias	guide	guidance	leadership
+isa	class	genre	group	category	type	kind	classification	hierarchy
+knownfor	known	notorious
+locatednear	near	nearby	adjacent	neighboring	bordering	close	proximity
+locationofaction	incident	location	situation	action	occurrence	happening
+madeof	material	matter	fabric	ingredient	substance
+maininterest	knowledge	interest	study	occupation	vocation
+motivatedbygoal	motivation	goal	inspiration	impulse	incentive	reason	intention
+notableidea	idea	famous	notable	teach	memorable	notorious	luminary	thought	belief	solution	theory
+notdesires	desire	dislike	disgust	distaste	avertion	disinterest
+notgeneralize	type	part	whole	genre	class	kind	group	collection	category
+partof	part	chunk	component	element	member	segment	constituent
+receivesaction	action	event	activity	function	use	outcome
+relatedto	related	relation
+requires	requisite	requirement	demand	prerequisite	precondition	condition	necessity
+similarsize	size	extent	range	measurement	proportion	amount	dimension	measure
+similarto	similar	alike	akin
+spokenin	spoken	speak	language	talk	say	tell	voice
+symbolof	symbol	represent	representation	image	portrayal	depiction	icon	embodiment	emblem	logo	motif	token
+synonym	synonym
+usedfor	employment	usage	application	function	duty
