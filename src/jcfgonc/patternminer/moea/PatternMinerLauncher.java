@@ -84,7 +84,7 @@ public class PatternMinerLauncher {
 
 				if (name.equalsIgnoreCase("PatternMutation")) {
 					double probability = typedProperties.getDouble("PatternMutation.Rate", 1.0);
-					PatternMutation pm = new PatternMutation(probability);
+					MutationOperator pm = new MutationOperator(probability);
 					return pm;
 				}
 

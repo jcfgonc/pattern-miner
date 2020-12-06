@@ -5,7 +5,7 @@ import org.moeaframework.core.Variation;
 
 import jcfgonc.patternminer.PatternChromosome;
 
-public class PatternMutation implements Variation {
+public class MutationOperator implements Variation {
 
 	/**
 	 * The probability of mutating each variable in a solution.
@@ -17,7 +17,7 @@ public class PatternMutation implements Variation {
 	 * 
 	 * @param probability the probability of occurring the mutation
 	 */
-	public PatternMutation(double probability) {
+	public MutationOperator(double probability) {
 		super();
 		this.probability = probability;
 	}

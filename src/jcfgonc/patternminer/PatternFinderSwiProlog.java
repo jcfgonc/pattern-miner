@@ -12,10 +12,10 @@ import org.jpl7.Variable;
 
 import graph.StringEdge;
 import graph.StringGraph;
+import jcfgonc.patternminer.moea.MutationCode;
 import structures.ObjectIndex;
 import structures.Ticker;
 
-@Deprecated
 public class PatternFinderSwiProlog {
 
 	/**
@@ -34,7 +34,7 @@ public class PatternFinderSwiProlog {
 		// generate a graph pattern
 		// do {
 		for (int i = 0; i < 3; i++) {
-			PatternMutation.mutation(graph, random, pattern, true);
+			MutationCode.mutation(graph, random, pattern, true);
 		}
 		// match the pattern in the graph
 		long count = countPatternMatches(pattern, 200000000);
@@ -47,8 +47,7 @@ public class PatternFinderSwiProlog {
 	/**
 	 * 
 	 * @param graph
-	 * @param concepts
-	 *            if null concepts are stored as text, else stored as unique integers
+	 * @param concepts if null concepts are stored as text, else stored as unique integers
 	 */
 	public static void createKnowledgeBase(final StringGraph graph, final ObjectIndex<String> concepts) {
 		JPL.init();
@@ -70,7 +69,8 @@ public class PatternFinderSwiProlog {
 
 			Compound factCompound = new Compound("assertz", new Term[] { relationCompound });
 			Query fact = new Query(factCompound);
-			fact.putQuery_jcfgonc();
+			fact.oneSolution();
+//			fact.putQuery_jcfgonc(); //this was a custom jpl7 function which added the query regardless of return values
 		}
 		System.out.println("SWI KB creation took " + t.getTimeDeltaLastCall() + " s");
 	}
@@ -140,10 +140,21 @@ public class PatternFinderSwiProlog {
 		Query q = new Query(rootCompound);
 		// Query qtest = new Query("isa(X3,X0),isa(X3,X1),isa(X2,X1)."); //test query
 		Ticker t = new Ticker();
-		long matches = q.countSolutions_jcfgonc(solutionLimit);
+
+		// this code is commented to be compatible with the original jpl7 source
+		// this was a custom jpl7 function in which the C side call asked the engine for next
+		// solutions until a limit is reached (and returned the count). Hence it minimized the java-C hasMoreSolutions/nextSolution call overhead
+		// long matches = q.countSolutions_jcfgonc(solutionLimit); 
+
+		long matches = 0;
+		while (q.hasMoreSolutions()) {
+			q.nextSolution();
+			matches++;
+		}
 		double time = t.getElapsedTime();
-		System.out.println("pattern edges\t" + patternWithVars.numberOfEdges() + "\tpattern vars\t" + patternWithVars.numberOfVertices() + "\ttime\t" + time + "\tmatches\t"
-				+ matches + "\tsolutions/s\t" + (matches / time) + "\tpattern\t" + patternWithVars.toString(64, Integer.MAX_VALUE));
+		System.out.println("pattern edges\t" + patternWithVars.numberOfEdges() + "\tpattern vars\t" + patternWithVars.numberOfVertices() + "\ttime\t"
+				+ time + "\tmatches\t" + matches + "\tsolutions/s\t" + (matches / time) + "\tpattern\t"
+				+ patternWithVars.toString(64, Integer.MAX_VALUE));
 		return matches;
 	}
 }

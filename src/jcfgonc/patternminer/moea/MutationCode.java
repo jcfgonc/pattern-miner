@@ -1,4 +1,4 @@
-package jcfgonc.patternminer;
+package jcfgonc.patternminer.moea;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -10,9 +10,11 @@ import graph.GraphAlgorithms;
 import graph.StringEdge;
 import graph.StringGraph;
 import it.unimi.dsi.fastutil.objects.Object2IntOpenHashMap;
+import jcfgonc.patternminer.PatternFinderUtils;
+import jcfgonc.patternminer.PatternMinerConfig;
 import utils.VariousUtils;
 
-public class PatternMutation {
+public class MutationCode {
 
 	/**
 	 * mutates the pattern IN-PLACE

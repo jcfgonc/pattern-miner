@@ -20,6 +20,7 @@ import graph.GraphAlgorithms;
 import graph.StringEdge;
 import graph.StringGraph;
 import it.unimi.dsi.fastutil.objects.Object2IntOpenHashMap;
+import jcfgonc.patternminer.moea.MutationCode;
 import structures.ListOfSet;
 import structures.Ticker;
 import structures.UnorderedPair;
@@ -303,7 +304,7 @@ public class PatternFinderUtils {
 	public static StringGraph initializePattern(StringGraph kbGraph, StringGraph pattern, RandomGenerator random) {
 		// randomly add edges to an empty graph
 		for (int i = 0; i < 3; i++) { // add N edges
-			PatternMutation.mutation(kbGraph, random, pattern, true);
+			MutationCode.mutation(kbGraph, random, pattern, true);
 		}
 		return pattern;
 	}

@@ -11,6 +11,7 @@ import com.githhub.aaronbembenek.querykb.KnowledgeBase;
 
 import graph.StringGraph;
 import it.unimi.dsi.fastutil.objects.Object2IntOpenHashMap;
+import jcfgonc.patternminer.moea.MutationCode;
 import structures.ListOfSet;
 
 public class PatternChromosome implements Variable {
@@ -94,7 +95,7 @@ public class PatternChromosome implements Variable {
 	}
 
 	public void mutate() {
-		PatternMutation.mutation(kbGraph, random, pattern, false); // do the mutation IN-PLACE
+		MutationCode.mutation(kbGraph, random, pattern, false); // do the mutation IN-PLACE
 		PatternFinderUtils.removeAdditionalComponents(this, null); // check for components (old repairing operator)
 	}
 
