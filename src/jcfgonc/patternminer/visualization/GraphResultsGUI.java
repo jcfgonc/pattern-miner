@@ -63,7 +63,6 @@ import it.unimi.dsi.fastutil.objects.ObjectSet;
 import slider.RangeSlider;
 import structures.TypeMap;
 import utils.OSTools;
-import visual.GraphData;
 
 public class GraphResultsGUI extends JFrame {
 	private static final long serialVersionUID = 5828909992252367118L;

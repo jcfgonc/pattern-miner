@@ -24,7 +24,6 @@ import org.apache.commons.lang3.mutable.MutableBoolean;
 import it.unimi.dsi.fastutil.objects.Object2DoubleOpenHashMap;
 import structures.GlobalFileWriter;
 import structures.TypeMap;
-import visual.GraphData;
 
 public class GraphFilter {
 	private HashMap<String, GraphData> graphMap;
