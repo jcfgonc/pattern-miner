@@ -151,6 +151,7 @@ public class PatternFinderSwiProlog {
 			q.nextSolution();
 			matches++;
 		}
+		q.close();
 		double time = t.getElapsedTime();
 		System.out.println("pattern edges\t" + patternWithVars.numberOfEdges() + "\tpattern vars\t" + patternWithVars.numberOfVertices() + "\ttime\t"
 				+ time + "\tmatches\t" + matches + "\tsolutions/s\t" + (matches / time) + "\tpattern\t"
