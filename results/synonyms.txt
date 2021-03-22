@@ -1,0 +1,39 @@
+antonym	antonym
+atlocation	location	locality	place	position	spot	locale	site
+attribute	attribute	property	quality	trait	feature	characteristic
+capableof	capable	able	competent	ability
+causes	cause	consequence	result	outcome	effect	induce
+causesdesire	desire	crave	wish
+createdby	creator	builder	conception	designer	author
+definedas	definition	characterization	meaning
+derivedfrom	derivative	derivation	ancestor
+desires	desire	desires	ambition	aspire	crave	want	wish
+entails	entails	involve entail
+field	field	domain	knowledge	interest	study	occupation	vocation
+hascontext	context	framework	circumstance	setting
+hasfirstsubevent	follow	event	first
+haslastsubevent	follow	event	last
+hasprerequisite	requirement	demand	prerequisite	requisite	precondition	condition	necessity
+hasproperty	property	attribute	quality	trait	feature	characteristic
+hassubevent	consequence	outcome	follow
+influencedby	influence	bias	guide	guidance	leadership
+isa	class	genre	group	category	type	kind	classification	hierarchy
+knownfor	known	notorious	famous
+locatednear	near	nearby	adjacent	neighboring	bordering	close	proximity
+locationofaction	incident	location	situation	occurrence	happening
+madeof	material	matter	fabric	ingredient	substance
+maininterest	knowledge	interest	study	occupation	vocation
+motivatedbygoal	motivation	goal	inspiration	impulse	incentive	reason	intention
+notableidea	idea		notable	memorable	luminary	thought	belief	solution	theory
+notdesires	dislike	disgust	distaste	avertion	disinterest
+notgeneralize	type	whole	genre	class	kind	group	collection	category
+partof	part	chunk	component	element	member	segment	constituent
+receivesaction	action	activity	use	outcome
+relatedto	related	relation
+requires	requisite	requirement	demand	prerequisite	precondition	condition	necessity
+similarsize	size	extent	range	measurement	proportion	amount	dimension	measure
+similarto	similar	alike	akin
+spokenin	spoken	speak	language	talk	say	tell	voice
+symbolof	symbol	represent	representation	image	portrayal	depiction	icon	embodiment	emblem	logo	motif	token
+synonym	synonym
+usedfor	employment	usage	application	function	duty
