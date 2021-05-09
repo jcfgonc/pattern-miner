@@ -3,7 +3,7 @@ atlocation	location	locality	place	position	spot	locale	site
 attribute	attribute	property	quality	trait	feature	characteristic
 capableof	capable	able	competent	ability
 causes	cause	consequence	result	outcome	effect	induce
-causesdesire	desire	crave	wish
+causesdesire	cause	crave	wish
 createdby	creator	builder	conception	designer	author
 definedas	definition	characterization	meaning
 derivedfrom	derivative	derivation	ancestor
