@@ -13,9 +13,10 @@ field	field	domain	knowledge	interest	study	knows
 hascontext	context
 hasfirstsubevent	event
 haslastsubevent	event
-hasprerequisite	requirement	prerequisite	requisite
+requires	requirement	prerequisite	requisite	necessity
 hasproperty	property
 hassubevent	consequence	event
+hasprerequisite	requires	require	requires	requirement	need
 influencedby	influence	influenced	influences
 isa	class	genre	category	type	classification
 knownfor	known	notorious	famous
@@ -30,8 +31,8 @@ notgeneralize	class	genre	category	type	classification
 partof	part	component	member	constituent
 receivesaction	receives	receive	received	action	activity
 relatedto	related	relation
-requires	require	requires	requirement
-similarsize	similar	size
+requires	require	requires	requirement	necessity	need
+similarsize	size
 similarto	similar
 spokenin	spoken	speak	location
 symbolof	symbol	represent	represents
